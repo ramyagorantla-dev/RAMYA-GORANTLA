@@ -1,0 +1,134 @@
+body{
+margin:0;
+font-family:Segoe UI;
+background:#0f1c2e;
+color:white;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+padding:20px 60px;
+background:#0b1626;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:30px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+}
+
+.hero{
+text-align:center;
+padding:120px 20px;
+}
+
+.hero h1{
+font-size:48px;
+}
+
+.btn{
+background:#3a7cff;
+padding:12px 24px;
+color:white;
+text-decoration:none;
+border-radius:6px;
+}
+
+section{
+padding:70px 15%;
+}
+
+.skills-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:30px;
+}
+
+.skill{
+background:#182a45;
+padding:30px;
+text-align:center;
+border-radius:10px;
+}
+
+.project-container{
+display:flex;
+gap:40px;
+flex-wrap:wrap;
+}
+
+.project-card{
+background:#1f3a60;
+padding:30px;
+width:260px;
+border-radius:10px;
+cursor:pointer;
+transition:.3s;
+}
+
+.project-card:hover{
+transform:scale(1.05);
+}
+
+.modal{
+display:none;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,.8);
+}
+
+.modal-content{
+background:#14273f;
+margin:8% auto;
+padding:40px;
+width:60%;
+border-radius:10px;
+}
+
+.close{
+float:right;
+font-size:30px;
+cursor:pointer;
+}
+
+footer{
+text-align:center;
+padding:20px;
+background:#0b1626;
+}
+
+
+/* CLOUD BACKGROUND */
+
+.clouds{
+position:fixed;
+top:0;
+left:0;
+width:200%;
+height:100%;
+background:url("https://i.imgur.com/cK4RZ8K.png") repeat-x;
+opacity:0.15;
+animation:move 60s linear infinite;
+z-index:-1;
+}
+
+@keyframes move{
+
+0%{
+transform:translateX(0);
+}
+
+100%{
+transform:translateX(-50%);
+}
+
+}
