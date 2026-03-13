@@ -1,102 +1,79 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-
-<title>Ramya Gorantla Portfolio</title>
-<link rel="stylesheet" href="style.css">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ramya Gorantla | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
 
-<div class="clouds"></div>
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">Ramya Gorantla</div>
+      <ul class="nav-links">
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="achievements.html">Certifications</a></li>
+        <li><a href="education.html">Education</a></li>
+      </ul>
+    </div>
+  </nav>
 
-<div class="container">
+  <div class="container">
+    <section class="hero">
+      <div class="hero-left">
+        <p class="tag">SAP • Cloud • Integration • Azure • AWS • SQL • Python</p>
+        <h1>Ramya Gorantla</h1>
+        <h2>SAP & Cloud Integration Developer</h2>
+        <p>
+          Computer Science graduate student with 2.5+ years of experience in SAP integration, cloud
+          technologies, and enterprise application development. Skilled in SAP CPI, SAP BTP, Azure, AWS,
+          SQL, Python, XML, and JSON.
+        </p>
 
-<h1>Ramya Gorantla</h1>
+        <div class="hero-buttons">
+          <a class="btn btn-primary" href="projects.html">View Projects</a>
+          <a class="btn btn-secondary" href="achievements.html">Certifications</a>
+          <a class="btn btn-secondary" href="Ramya_Gorantla_Resume.pdf" target="_blank">Resume</a>
+        </div>
 
-<p>SAP CPI Integration Developer | 2.5 Years Experience</p>
+        <div class="quick-info">
+          <div class="info-box">
+            <h3>2.5+</h3>
+            <p>Years Experience</p>
+          </div>
+          <div class="info-box">
+            <h3>SAP</h3>
+            <p>Integration & Development</p>
+          </div>
+          <div class="info-box">
+            <h3>Cloud</h3>
+            <p>Azure • AWS</p>
+          </div>
+        </div>
+      </div>
 
-<nav>
-<a href="#about">About</a>
-<a href="#skills">Skills</a>
-<a href="#experience">Experience</a>
-<a href="#projects">Projects</a>
-</nav>
+      <div class="hero-right">
+        <div class="profile-card">
+          <img src="profile.jpg" alt="Ramya Gorantla" class="profile-image" />
+          <h3>Ramya Gorantla</h3>
+          <p>Developer focused on SAP, cloud platforms, and enterprise integration solutions.</p>
 
-<section id="about">
+          <div class="profile-tags">
+            <span>SAP CPI</span>
+            <span>SAP BTP</span>
+            <span>Azure</span>
+            <span>AWS</span>
+            <span>SQL</span>
+            <span>Python</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
 
-<h2>About Me</h2>
-
-<p>
-SAP CPI Integration Developer with 2.5 years experience at Accenture
-working on enterprise integrations in the Canada Post
-Transformation Project.
-</p>
-
-</section>
-
-<section id="skills">
-
-<h2>Skills</h2>
-
-<ul>
-
-<li>SAP CPI</li>
-<li>SAP BTP</li>
-<li>Groovy Scripting</li>
-<li>XML / JSON Transformations</li>
-<li>Python</li>
-<li>SQL</li>
-<li>API Integrations</li>
-
-</ul>
-
-</section>
-
-<section id="experience">
-
-<h2>Experience</h2>
-
-<h3>Accenture (2022-2024)</h3>
-
-<p>
-Worked as SAP CPI Integration Developer supporting the
-Canada Post Transformation Project.
-</p>
-
-<ul>
-<li>Developed CPI iFlows</li>
-<li>Built Groovy scripts</li>
-<li>Handled production support</li>
-<li>Worked with HTTP, IDoc, SOAP adapters</li>
-</ul>
-
-</section>
-
-<section id="projects">
-
-<h2>Projects</h2>
-
-<div class="project-card" onclick="showProject('db')">
-
-Restaurant Database Management System
-
-</div>
-
-<div class="project-card" onclick="showProject('sap')">
-
-SAP CPI Enterprise Integrations
-
-</div>
-
-<div id="projectDetails"></div>
-
-</section>
-
-</div>
-
-<script src="script.js"></script>
-
+  <div class="footer">© 2026 Ramya Gorantla</div>
 </body>
 </html>
