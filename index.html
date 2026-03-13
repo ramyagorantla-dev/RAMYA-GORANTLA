@@ -5,19 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ramya Gorantla | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
-  <script>
-    if (window.location.pathname.endsWith('/index.html')) {
-      window.history.replaceState({}, '', '/');
-    }
-  </script>
 </head>
 <body>
 
   <nav class="navbar">
     <div class="nav-container">
-      <div class="logo">Ramya Gorantla</div>
+      <div class="logo">Portfolio</div>
       <ul class="nav-links">
-        <li><a class="active" href="/">Home</a></li>
+        <li><a class="active" href="index.html">Home</a></li>
         <li><a href="skills.html">Skills</a></li>
         <li><a href="projects.html">Projects</a></li>
         <li><a href="achievements.html">Certifications</a></li>
@@ -26,44 +21,62 @@
     </div>
   </nav>
 
-  <main class="hero">
-    <div class="hero-overlay"></div>
+  <div class="container">
+    <section class="hero">
+      <div class="hero-left">
+        <p class="tag">SAP • Cloud • Integration • Azure • AWS • SQL • Python</p>
+        <h1>Ramya Gorantla</h1>
+        <h2>SAP & Cloud Integration Developer</h2>
+        <p>
+          Computer Science graduate student with 2.5+ years of experience in SAP integration,
+          cloud technologies, and enterprise application development. Skilled in SAP CPI, SAP BTP,
+          Azure, AWS, SQL, Python, XML, and JSON.
+        </p>
 
-    <section class="hero-center">
-      <p class="tag">SAP • Cloud • Integration • Azure • AWS • SQL • Python</p>
+        <div class="hero-buttons">
+          <a class="btn btn-primary" href="projects.html">View Projects</a>
+          <a class="btn btn-secondary" href="achievements.html">Certifications</a>
+          <a class="btn btn-secondary" href="Ramya_Gorantla_Resume.pdf" target="_blank">Resume</a>
+        </div>
 
-      <h1>Ramya Gorantla</h1>
-      <h2>SAP & Cloud Integration Developer</h2>
-
-      <p class="hero-text">
-        Computer Science graduate student with 2.5+ years of experience in SAP integration,
-        cloud technologies, and enterprise application development. Skilled in SAP CPI,
-        SAP BTP, Azure, AWS, SQL, Python, XML, and JSON.
-      </p>
-
-      <div class="hero-buttons">
-        <a class="btn btn-primary" href="projects.html">View Projects</a>
-        <a class="btn btn-secondary" href="achievements.html">Certifications</a>
-        <a class="btn btn-secondary" href="Ramya_Gorantla_Resume.pdf" target="_blank">Resume</a>
+        <div class="quick-info">
+          <div class="info-box">
+            <h3>2.5+</h3>
+            <p>Years Experience</p>
+          </div>
+          <div class="info-box">
+            <h3>SAP</h3>
+            <p>Integration & Development</p>
+          </div>
+          <div class="info-box">
+            <h3>Cloud</h3>
+            <p>Azure • AWS</p>
+          </div>
+        </div>
       </div>
 
-      <div class="quick-info">
-        <div class="info-box">
-          <h3>2.5+</h3>
-          <p>Years Experience</p>
-        </div>
-        <div class="info-box">
-          <h3>SAP</h3>
-          <p>Integration & Development</p>
-        </div>
-        <div class="info-box">
-          <h3>Cloud</h3>
-          <p>Azure • AWS</p>
+      <div class="hero-right">
+        <div class="profile-card">
+          <img src="profile.jpg" alt="Ramya Gorantla" class="profile-image" />
+
+          <div class="skills-highlight">
+            <h3>Core Skills</h3>
+            <div class="profile-tags">
+              <span>SAP CPI</span>
+              <span>SAP BTP</span>
+              <span>Azure</span>
+              <span>AWS</span>
+              <span>SQL</span>
+              <span>Python</span>
+              <span>XML</span>
+              <span>JSON</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
-  </main>
+  </div>
 
-  <footer class="footer">© 2026 Ramya Gorantla</footer>
+  <div class="footer">© 2026 Ramya Gorantla</div>
 </body>
 </html>
