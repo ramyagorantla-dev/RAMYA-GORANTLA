@@ -26,7 +26,7 @@ a {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: rgba(5, 14, 28, 0.78);
+  background: rgba(6, 14, 28, 0.7);
   backdrop-filter: blur(14px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
@@ -72,44 +72,77 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 50px 20px;
+  padding: 40px 20px;
   overflow: hidden;
-
-  /* Use your background image here */
   background:
-    linear-gradient(rgba(4, 14, 28, 0.78), rgba(6, 16, 32, 0.82)),
-    url("hero-bg.jpg") center center / cover no-repeat;
-
-  background-attachment: fixed;
+    linear-gradient(135deg, #07111f 0%, #08192f 40%, #10152b 100%);
 }
 
-/* extra color glow */
-.hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background:
-    radial-gradient(circle at 20% 25%, rgba(0, 194, 255, 0.22), transparent 22%),
-    radial-gradient(circle at 80% 75%, rgba(124, 77, 255, 0.20), transparent 24%),
-    radial-gradient(circle at 50% 50%, rgba(18, 209, 142, 0.10), transparent 18%);
-  pointer-events: none;
-}
-
-.hero-overlay {
+/* Matrix-style moving grid */
+.matrix-bg {
   position: absolute;
   inset: 0;
   background-image:
-    linear-gradient(rgba(120, 228, 255, 0.05) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(120, 228, 255, 0.05) 1px, transparent 1px);
+    linear-gradient(rgba(120, 228, 255, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(120, 228, 255, 0.08) 1px, transparent 1px);
   background-size: 42px 42px;
-  opacity: 0.22;
+  mask-image: linear-gradient(to bottom, rgba(0,0,0,0.95), rgba(0,0,0,0.55));
   animation: gridMove 14s linear infinite;
-  pointer-events: none;
+  opacity: 0.4;
 }
 
 @keyframes gridMove {
-  0% { transform: translateY(0); }
-  100% { transform: translateY(42px); }
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(42px);
+  }
+}
+
+/* Color glows */
+.glow {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(90px);
+  opacity: 0.28;
+  animation: floatGlow 10s ease-in-out infinite alternate;
+}
+
+.glow1 {
+  width: 320px;
+  height: 320px;
+  background: #00c2ff;
+  top: 12%;
+  left: 8%;
+}
+
+.glow2 {
+  width: 340px;
+  height: 340px;
+  background: #7c4dff;
+  bottom: 10%;
+  right: 8%;
+  animation-duration: 13s;
+}
+
+.glow3 {
+  width: 240px;
+  height: 240px;
+  background: #12d18e;
+  top: 55%;
+  left: 55%;
+  animation-duration: 11s;
+  opacity: 0.16;
+}
+
+@keyframes floatGlow {
+  0% {
+    transform: translateY(0) translateX(0) scale(1);
+  }
+  100% {
+    transform: translateY(-30px) translateX(20px) scale(1.08);
+  }
 }
 
 .hero-center {
@@ -118,12 +151,12 @@ a {
   text-align: center;
   position: relative;
   z-index: 2;
-  padding: 42px;
+  padding: 40px;
   border-radius: 28px;
-  background: rgba(8, 18, 34, 0.44);
+  background: rgba(255, 255, 255, 0.06);
   border: 1px solid rgba(255, 255, 255, 0.08);
-  backdrop-filter: blur(12px);
-  box-shadow: 0 22px 60px rgba(0, 0, 0, 0.28);
+  backdrop-filter: blur(16px);
+  box-shadow: 0 22px 60px rgba(0, 0, 0, 0.22);
 }
 
 .tag {
@@ -131,9 +164,9 @@ a {
   padding: 12px 22px;
   margin-bottom: 22px;
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.10);
+  background: rgba(255, 255, 255, 0.08);
   color: #9fe9ff;
-  border: 1px solid rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.12);
   font-size: 14px;
   font-weight: 700;
 }
@@ -180,7 +213,7 @@ a {
 .btn-primary {
   background: linear-gradient(90deg, #00a6ff, #7c4dff);
   color: #ffffff;
-  box-shadow: 0 10px 26px rgba(0, 166, 255, 0.22);
+  box-shadow: 0 10px 26px rgba(0, 166, 255, 0.2);
 }
 
 .btn-primary:hover {
@@ -188,13 +221,13 @@ a {
 }
 
 .btn-secondary {
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.07);
   color: #ffffff;
-  border: 1px solid rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.12);
 }
 
 .btn-secondary:hover {
-  background: rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.12);
 }
 
 .quick-info {
@@ -207,7 +240,7 @@ a {
 .info-box {
   padding: 22px;
   border-radius: 20px;
-  background: rgba(255, 255, 255, 0.09);
+  background: rgba(255, 255, 255, 0.07);
   border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
@@ -227,7 +260,7 @@ a {
   padding: 24px 0 34px;
   color: #cbdcf0;
   font-size: 14px;
-  background: rgba(6, 14, 28, 0.78);
+  background: rgba(6, 14, 28, 0.65);
 }
 
 @media (max-width: 992px) {
