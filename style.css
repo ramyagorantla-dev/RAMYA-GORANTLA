@@ -407,3 +407,23 @@ a {
     width: 92%;
   }
 }
+.contact-links{
+display:flex;
+gap:15px;
+margin-top:20px;
+}
+
+.contact-links a{
+padding:10px 18px;
+background:linear-gradient(135deg,#2563eb,#7c3aed);
+color:white;
+border-radius:8px;
+text-decoration:none;
+font-weight:600;
+transition:0.3s;
+}
+
+.contact-links a:hover{
+transform:translateY(-2px);
+box-shadow:0 6px 15px rgba(0,0,0,0.2);
+}
