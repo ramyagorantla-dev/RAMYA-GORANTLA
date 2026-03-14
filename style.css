@@ -354,3 +354,43 @@ width:92%;
 }
 
 }
+/* Center whole page */
+.container{
+max-width:1200px;
+margin:0 auto;
+}
+
+/* Center hero content */
+.hero{
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+/* Center text content */
+.hero-left{
+max-width:900px;
+margin:0 auto;
+text-align:center;
+}
+
+/* Center buttons */
+.hero-buttons{
+display:flex;
+justify-content:center;
+gap:14px;
+flex-wrap:wrap;
+}
+
+/* Info boxes layout */
+.quick-info{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:20px;
+margin-top:20px;
+}
+
+/* Contact card stays on right side */
+.quick-info .info-box:last-child{
+grid-column:4;
+}
